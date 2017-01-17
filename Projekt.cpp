@@ -1,6 +1,6 @@
 /*
 Projekt nr 161
-12.01.2017 Katarzyna Hawliczek 15804
+Katarzyna Hawliczek 15804
 Program rysuje figurę znakiem ASCII i umożliwia przesuwanie, zmniejszanie oraz zwiększanie jej.
 */
 #include <iostream>
