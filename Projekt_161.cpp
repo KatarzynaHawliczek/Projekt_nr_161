@@ -1,7 +1,7 @@
 /*
 Projekt nr 161
-12.01.2017 Katarzyna Hawliczek 15804
-Program rysuje figurê znakiem ASCII i umo¿liwia przesuwanie, zmniejszanie oraz zwiêkszanie jej.
+18.01.2017 Katarzyna Hawliczek 15804
+Program rysuje figurÄ™ znakiem ASCII i umoÅ¼liwia przesuwanie, zmniejszanie oraz zwiÄ™kszanie jej.
 */
 #include <iostream>
 #include <conio.h>
@@ -40,7 +40,7 @@ int main()
 	czyt_dane(A, znak);
 	pisz_tab(A);
 
-	/*-----------------------Sterowanie figur¹.--------------------------*/
+	/*-----------------------Sterowanie figurÄ….--------------------------*/
 
 	while (koniec == false)
 	{
@@ -48,13 +48,13 @@ int main()
 
 		switch (z)
 		{
-		case 72:       // Przesuwanie w górê.
+		case 72:       // Przesuwanie w gÃ³rÄ™.
 		{
 			gora(A);
 			ruch = 'g';
 		}
 		break;
-		case 80:       // Przesuwanie w dó³.
+		case 80:       // Przesuwanie w dÃ³Å‚.
 		{
 			dol(A);
 			ruch = 'd';
@@ -72,7 +72,7 @@ int main()
 			ruch = 'p';
 		}
 		break;
-		case 43:       // Powiekszanie.
+		case 43:       // PowiÄ™kszanie.
 		{
 			zwieksz(A, znak);
 			ruch = '+';
@@ -173,7 +173,7 @@ int wczytajRozmiar(string komunikat, bool czyMiesciSieWOknie)   // Walidacja roz
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	return rozmiar;
 }
-void czyt_dane(char A[x][y], char znak)   // Wczytanie rozmiaru i wype³nienie tablicy.
+void czyt_dane(char A[x][y], char znak)   // Wczytanie rozmiaru i wypeÅ‚nienie tablicy.
 {
 	int i, j, r;
 
@@ -199,7 +199,7 @@ void czyt_dane(char A[x][y], char znak)   // Wczytanie rozmiaru i wype³nienie ta
 		A[i][j] = znak;
 	}
 }
-void gora(char A[x][y])		// Przesuwanie w górê.
+void gora(char A[x][y])		// Przesuwanie w gÃ³rÄ™.
 {
 	int i, j;
 
@@ -212,7 +212,7 @@ void gora(char A[x][y])		// Przesuwanie w górê.
 		}
 	}
 }
-void dol(char A[x][y])		// Przesuwanie w dó³.
+void dol(char A[x][y])		// Przesuwanie w dÃ³Å‚.
 {
 	int i, j;
 
@@ -251,7 +251,7 @@ void prawo(char A[x][y])		// Przesuwanie w prawo.
 		}
 	}
 }
-void zwieksz(char A[x][y], char &znak)		// Powiêkszanie.
+void zwieksz(char A[x][y], char &znak)		// PowiÄ™kszanie.
 {
 	int i, j;
 
@@ -339,7 +339,7 @@ void pisz_tab(char A[x][y])   // Wypisanie tablicy ( rysowanie figury ).
 	}
 	cout << endl;
 }
-bool czy_w_ramce(char A[x][y], char &znak)   // Sprawdzenie, czy figura nie wychodzi poza ramkê. 
+bool czy_w_ramce(char A[x][y], char &znak)   // Sprawdzenie, czy figura nie wychodzi poza ramkÄ™. 
 {
 	int i, j;
 	bool ramka = false;
